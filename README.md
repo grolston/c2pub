@@ -1,2 +1,7 @@
 # c2pub
-public templates depot
+
+Deployment example
+
+```sh
+curl -sSL https://raw.githubusercontent.com/grolston/c2pub/main/deploy-conductor.sh | sh
+```
