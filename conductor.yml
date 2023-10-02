@@ -48,10 +48,7 @@ Resources:
           - Effect: Allow
             Action: sts:AssumeRoleWithWebIdentity
             Principal:
-              Federated: !If
-                - CreateProvider
-                - !Ref IdpGitHubOidc
-                - !Sub arn:${AWS::Partition}:iam::${AWS::AccountId}:oidc-provider/token.actions.githubusercontent.com
+              Federated: !Ref IdpGitHubOidc
             Condition:
               StringEquals:
                 token.actions.githubusercontent.com:aud: "sts.amazonaws.com"
