@@ -42,7 +42,7 @@ Resources:
   WorkshopAdmin:
     Type: AWS::IAM::Role
     Properties:
-      RoleName: !Ref ${RoleName}
+      RoleName: !Ref RoleName
       AssumeRolePolicyDocument:
         Statement:
           - Effect: Allow
