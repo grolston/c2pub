@@ -6,17 +6,17 @@ Parameters:
 
   GHO:
     Type: String
-    Description: This is the root organization where repos are stored (Case Sensitive)
+    Description: case sensitive
     Default: "grolston"
 
   RN:
     Type: String
-    Description: The repo(s) these roles will have access to. (Use * for all Org Repos or wildcard)
-    Default: "*"
+    Description: case sensitive
+    Default: "c2"
 
   BH:
     Type: String
-    Description: Name of the git branch to to trust. (Use * for all branches)
+    Description: case sensitive
     Default: "main"
     
   RoleName:
