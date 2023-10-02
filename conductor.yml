@@ -56,3 +56,7 @@ Resources:
                 token.actions.githubusercontent.com:sub: !Sub repo:${GHO}/${RN}:ref:refs/heads/${BH}
       ManagedPolicyArns:
         - !Sub arn:${AWS::Partition}:iam::aws:policy/AdministratorAccess
+Outputs:
+     oWorkshopAdminArn:
+      Description: Workshop Admin Arn
+      Value: !GetAtt WorkshopAdmin.Arn
